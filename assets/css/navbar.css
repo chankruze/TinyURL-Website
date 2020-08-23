@@ -1,0 +1,71 @@
+/*
+Author: chankruze (chankruze@geekofia.in)
+Created: Sun Aug 23 2020 00:59:04 GMT+0530 (India Standard Time)
+
+Copyright (c) Geekofia 2020 and beyond
+*/
+
+nav {
+  font-family: Poppins;
+  line-height: 1.5;
+  /* background: rgb(255, 0, 0); */
+  /* background: #fff; */
+}
+
+.navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.navbar .navbar-brand {
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-brand .navbar-brand-txt {
+  margin: auto;
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #2098d1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}

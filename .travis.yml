@@ -1,0 +1,17 @@
+language: ruby
+
+rvm:
+  - 2.7.0
+
+script:
+  - gem install bundler:2.1.4
+  - bundle update --bundler
+
+deploy:
+  provider: pages
+  fqdn: tinyurl.geekofia.in
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
