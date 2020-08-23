@@ -1,19 +1,17 @@
 language: ruby
+
 rvm:
   - 2.7.0
+
 script:
   - gem install bundler:2.1.4
   - bundle update --bundler
+
 deploy:
   provider: pages
   fqdn: tinyurl.geekofia.in
   skip_cleanup: true
-  github_token: "$GH_TOKEN"
+  github_token: $GITHUB_TOKEN
   keep_history: true
-  verbose: true
   on:
     branch: master
-
-env:
-  global:
-    secure: NQUSadUcs+kZz8yorjqZkY5vAr3oS64nIp8JhWOfBkA4rsYvmsy1yvSNUlEJwthGa/evnC/rYW2Rw1Ig1RXHiNUal/D7Ccfo9SFK0idXxRbdszqovkcx+iammZjfcfpcR3wt2HGm+JHuMoK5o5qUTvn5fJ87ZexirRmBDcy/TQsN/lAUO5Sw9In1TH5o6ysU1jLVZhBS3qRTjRsaxEBro9MTFCef8ebI7V4vgVq60AszPGgzmrUpr52M8t7ZdNuPcfoCAKIGhaZTpHyGMkw92AZeYPl5DI8oaUHXbXzgOGV1kEJqxXqk/c4IIK5evWuqOmtfeE8fXFUlAanGVnJAgJIii8P7vePH/f7Lj7jYyY3zZPKoqS6Ea91N39358SUhEw4GJ6McVYzSXJFZdVkrn5pJbt7PVs+QY8ug6CVM5nEKfL/8mx0ZiOgB/3NeBVmL1e0cyZMpSIzTeulRwD6RqnP9ekP9HS1DX2gaIWC2c7TAuDaRhbueunlN4zsvnWWd8ELT6lFmocHbc/NlFw5A3iaNT7EZIItBOgVjkQPU5Evfq79btaEKDlxSCvI+MAZ8IKrv+NC553+c28zBd1LPoaiRFM4mMsliHhvH08G3GaSwL0qIYIpFVEjO3+E0ae82LInJgojTIOPk7on88xIVd6O9+8JUf6GOm6NkWzZ0u3M=
