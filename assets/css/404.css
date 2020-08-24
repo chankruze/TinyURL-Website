@@ -5,3 +5,15 @@ Created: Sun Aug 23 2020 00:58:34 GMT+0530 (India Standard Time)
 Copyright (c) Geekofia 2020 and beyond
 */
 
+.container-404 {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}

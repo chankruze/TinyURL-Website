@@ -7,6 +7,7 @@ Copyright (c) Geekofia 2020 and beyond
 
 @import "../vendors/bootstrap-4.5.2/css/bootstrap.min.css";
 @import "./fonts.css";
+@import "../vendors/fontawesome/css/all.css";
 
 .f-right {
     float: right;

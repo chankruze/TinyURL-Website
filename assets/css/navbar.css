@@ -69,3 +69,10 @@ nav {
 .hvr-underline-from-left:active:before {
   right: 0;
 }
+
+.nav-item .badge {
+  vertical-align: text-top;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
