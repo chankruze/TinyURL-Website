@@ -1,0 +1,25 @@
+<!--
+Author: chankruze (chankruze@geekofia.in)
+Created: Mon Aug 24 2020 03:36:42 GMT+0530 (India Standard Time)
+
+Copyright (c) Geekofia 2020 and beyond
+-->
+
+<li class="command">
+    <div class="card">
+        <div class="card-body">
+            <div class="command-header">
+                <h3 class="card-title">
+                    {{ post.command }}
+                    <span class="badge badge-pill badge-{{ post.badge }}">{{ post.category }}</span>
+                    <i class="fas fa-angle-down more"></i>
+                </h3>
+            </div>
+            <div class="command-wrapper">
+                <p class="card-text">
+                    {{ post.content }}
+                </p>
+            </div>
+        </div>
+    </div>
+</li>
