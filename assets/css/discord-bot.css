@@ -5,31 +5,36 @@ Created: Mon Aug 24 2020 03:20:00 GMT+0530 (India Standard Time)
 Copyright (c) Geekofia 2020 and beyond
 */
 .content {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 ul {
-    list-style: none !important;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
 }
 
 .command {
   margin-bottom: 1rem;
 }
 
+.command-header {
+  vertical-align: middle;
+}
+
 .command-header h3 {
+  font-size: 1.5rem;
   display: inline;
 }
 
 .command-header h3 i {
-  padding-top: 0.25rem;
-  float: right;
-  margin-left: 1rem;
-  transition: all 0.1s ease-in-out;
-}
-
-.command-header h3 i:hover {
-  color: #00ccff;
-  transform: scale(1.2);
+  margin-top: .45rem;
+  float: left;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  /* transition: all 0.1s ease-in-out; */
 }
 
 .command-wrapper {
@@ -41,9 +46,9 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-    .content {
-        padding-bottom: 3rem;
-    }
+  .content {
+    padding-bottom: 3rem;
+  }
 }
 
 h3.card-title .badge {

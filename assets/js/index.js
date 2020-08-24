@@ -12,11 +12,11 @@ $(function () {
   });
 });
 
-$('.more').click(function () {
-  $(this).toggleClass("fa-angle-down fa-angle-up");
-  $(this).parent().parent().siblings(".command-wrapper").toggle();
+$('.command').click(function () {
+  $(this).find('.more').toggleClass("fa-angle-right fa-angle-down");
+  $(this).find(".command-wrapper").toggle();
 
   // close other commands' more
-  $('.more.fa-angle-up').not(this).toggleClass("fa-angle-up fa-angle-down");
-  $('.more').not(this).parent().parent().siblings(".command-wrapper").hide();
+  $('.command').not(this).find('.more.fa-angle-down').toggleClass("fa-angle-down fa-angle-right");
+  $('.command').not(this).find(".command-wrapper").hide();
 });
