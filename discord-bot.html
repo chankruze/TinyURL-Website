@@ -12,10 +12,22 @@ Copyright (c) Geekofia 2020 and beyond
 
 <link rel="stylesheet" href="/assets/css/discord-bot.css">
 
-<div class="container commands-wrapper">
-    <ul>
-        {% for post in site.posts %}
-            {% include li-command.html %}
-        {% endfor %}
-      </ul>
+<div class="container header">
+    <div class="col-md-12 caption">
+        <h1>TinyURL bot is now Available !</h1>
+        <button class="btn-add draw-border">Add to Discord</button>
+    </div>
 </div>
+
+<div class="container commands-wrapper">
+    <div class="col-md-12 caption">
+        <h2>List of Commands</h2>
+        <ul>
+            {% for post in site.posts %}
+            {% include li-command.html %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script src="/assets/js/prism.js"></script>
