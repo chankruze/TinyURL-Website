@@ -24,6 +24,11 @@ Copyright (c) Geekofia 2020 and beyond
   font-family: 'Alata';
   font-weight: 600;
 }
+
+.container.header p {
+  margin-top: 1rem;
+}
+
 .caption {
   display: inline-block;
   vertical-align: middle;
