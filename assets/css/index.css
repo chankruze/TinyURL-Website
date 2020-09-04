@@ -6,7 +6,7 @@ Copyright (c) Geekofia 2020 and beyond
 */
 
 .caption h1 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Alata", sans-serif;
   font-weight: 800;
   font-size: 55px;
   line-height: 1.2;
@@ -43,6 +43,7 @@ a:hover {
 element.style {
   animation-delay: 1s;
 }
+
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
@@ -79,7 +80,6 @@ element.style {
   text-indent: -9999px;
   width: 60px;
   height: 60px;
-  margin-left: 1.5rem !important;
   background: url(../img/svg/play-button.svg);
   text-align: center;
   display: inline-block;
@@ -87,7 +87,6 @@ element.style {
   border-radius: 50%;
   position: relative;
   vertical-align: middle;
-  margin-left: 1rem;
 }
 
 .caption img {
@@ -107,6 +106,7 @@ element.style {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+
 .hvr-bounce-to-right:before {
   content: "";
   position: absolute;
@@ -214,9 +214,10 @@ element.style {
     font-size: 40px;
   }
 }
+
 .section-tittle h2 {
-  font-family: Nunito;
-  font-weight: 800;
+  font-family: "Alata";
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 90px;
   font-size: 3rem !important;
@@ -250,9 +251,10 @@ element.style {
 }
 
 .best-features-area .features-shpae {
+  width: 500px;
   position: absolute;
   left: 30px;
-  top: 100px;
+  top: 150px;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -274,4 +276,57 @@ element.style {
   display: block;
   line-height: 67px;
   text-align: center;
+}
+
+.wrap-download {
+  background-image: -webkit-linear-gradient(-90deg, #FFFFFF 0%, #6DD5FA 100%);
+  /* background-image: -moz-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%);
+  background-image: -ms-linear-gradient(0deg, #6c19f6 0%, #f9218d 100%); */
+}
+.wrap-download h2 {
+  font-family: "Alata";
+  font-weight: 800;
+  font-size: 3rem !important;
+}
+
+.wrap-download .container {
+  padding: 50px 30px 150px 30px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  .available-app-area .app-img {
+    top: 45px;
+    right: 0;
+  }
+}
+
+.dl-btn {
+  margin-left: -20px;
+  width: 250px;
+}
+
+.shape-right {
+  width: 512px;
+}
+
+@media only screen and (max-width: 988px) {
+  .caption p {
+    margin-bottom: 1rem !important;
+    padding-right: 0 !important;
+  }
+
+  .shape-right {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  .caption h1 {
+    font-size: 2.2rem !important;
+  }
+
+  .caption p {
+    margin-bottom: 1rem !important;
+    padding-right: 10px !important;
+  }
 }
